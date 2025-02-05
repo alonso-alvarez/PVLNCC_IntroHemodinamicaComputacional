@@ -28,7 +28,16 @@ Para clonar este repositório:
 - **Aulas no YouTube:**
 
 ## Sobre o TEPEM4Ed
-TEPEM4Ed (TEPEM for Education) é um software de simulação do escoamento sanguíneo 3d, desenvolvido para a primeira edição do minicurso "Introdução à Hemodinâmica Computacional" (2023) que encapsula dentro de um container Docker o método numérico denominado TEPEM (Transversally Enriched Pipe Element Method). O TEPEM foi desenvolvido durante a tese de doutorado do Alonso Alvarez, sob orientação do Pablo Blanco, no LNCC.
+TEPEM4Ed (TEPEM for Education) é um software de simulação do escoamento sanguíneo 3d, desenvolvido para a primeira edição do minicurso "Introdução à Hemodinâmica Computacional" (2023) que encapsula dentro de um container Docker o método numérico denominado TEPEM (Transversally Enriched Pipe Element Method). 
+O TEPEM foi desenvolvido durante a tese de doutorado do Alonso Alvarez, sob orientação do Pablo Blanco, no LNCC.
+
+- **Requisitos.** Para instalar o Docker, recomendamos o seguinte tutorial: [Instalar Docker](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04)
+- **Visualização.** Para a visualização dos resultados, utilizaremos o conhecido software [Paraview](https://www.paraview.org/download/)
+
+Comandos uteis no Docker:
+- **Listar imagens.** docker image list
+- **Buscar imagens.** docker search hemolab
+- **Utilizar imagen.** docker run -it hemolab/tepem4ed
 
 ## Referências
 - Taroco, EO; Blanco, PJ; Feijóo, RA. Introduction to the Variational Formulation in Mechanics: Fundamentals and Applications. 2020 – Wiley.
