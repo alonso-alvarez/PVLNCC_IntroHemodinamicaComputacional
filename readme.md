@@ -20,4 +20,15 @@ Para clonar este repositório:
 
 ## Material
 - **Slides:** Os slides utilizados durante o minicurso estão disponíveis nesse repositório, na pasta XXX.
-- **Aulas no YouTube:** 
+- **Aulas no YouTube:**
+
+## Sobre o TEPEM4Ed
+TEPEM4Ed (TEPEM for Education) é um software de simulação do escoamento sanguíneo 3d, desenvolvido para a primeira edição do minicurso "Introdução à Hemodinâmica Computacional" (2023) que encapsula dentro de um container Docker o método numérico denominado TEPEM (Transversally Enriched Pipe Element Method). O TEPEM foi desenvolvido durante a tese de doutorado do Alonso Alvarez, sob orientação do Pablo Blanco, no LNCC.
+
+Referências
+- Mansilla Alvarez, LA. An Effective Numerical Technique for Pipe-Like Domains and its Application in Computational Hemodynamics. Tese de Doutorado 2018, Orientador: Blanco, PJ – Laboratório Nacional de Computação Científica.
+- Mansilla Álvarez, LA; Blanco, PJ; Bulant, CA; Dari, EA; Veneziani, A; Feijóo, RA. Transversally Enriched Pipe Element Method (TEPEM). An effective numerical approach for blood flow modeling. International Journal for Numerical Methods in Biomedical Engineering, v. 33, p. e2808, 2017.
+
+Como usar o TEPEM4Ed
+- Instalar Docker: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04
+- 
