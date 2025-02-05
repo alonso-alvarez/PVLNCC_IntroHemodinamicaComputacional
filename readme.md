@@ -9,7 +9,7 @@ O objetivo desse minicurso é fornecer um primeiro contato com as ferramentas, t
 Links de interesse:
 - Laboratório Nacional de Computação Científica: [LNCC](https://lncc.br)
 - Programa de Verão do LNCC: [PV-LNCC](https://verao.lncc.br)
-- Hemodynamics Modeling Laboratory: [HeMoLab](https://hemolab.lncc.br)
+- Hemodynamics Modeling Laboratory: [HeMoLab](http://hemolab.lncc.br)
 
 Para clonar este repositório:
    ```bash
