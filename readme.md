@@ -1,4 +1,4 @@
-# Minicurso: Introdução à Hemodinâmica Computacional
+# Introdução à Hemodinâmica Computacional
 
 Minicurso oferecido no Programa de Verão do Laboratório Nacional de Computação Científica - LNCC.
 
@@ -7,9 +7,9 @@ O objetivo desse minicurso é fornecer um primeiro contato com as ferramentas, t
 - Alonso Alvarez. Pesquisador Adjunto do LNCc. lalvarez [at] lncc.br
 
 Links de interesse:
-- Laboratório Nacional de Computação Científica: lncc.br
-- Programa de Verão do LNCC: verao.lncc.br
-- Hemodynamics Modeling Laboratory - HeMoLab: hemolab.lncc.br
+- Laboratório Nacional de Computação Científica: [LNCC](lncc.br)
+- Programa de Verão do LNCC: [PV-LNCC](verao.lncc.br)
+- Hemodynamics Modeling Laboratory: [HeMoLab](hemolab.lncc.br)
 
 Para clonar este repositório:
    ```bash
