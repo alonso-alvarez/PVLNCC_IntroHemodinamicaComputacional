@@ -7,9 +7,9 @@ O objetivo desse minicurso é fornecer um primeiro contato com as ferramentas, t
 - Alonso Alvarez. Pesquisador Adjunto do LNCc. lalvarez [at] lncc.br
 
 Links de interesse:
-- Laboratório Nacional de Computação Científica: [LNCC](lncc.br)
-- Programa de Verão do LNCC: [PV-LNCC](verao.lncc.br)
-- Hemodynamics Modeling Laboratory: [HeMoLab](hemolab.lncc.br)
+- Laboratório Nacional de Computação Científica: [LNCC](https://lncc.br)
+- Programa de Verão do LNCC: [PV-LNCC](https://verao.lncc.br)
+- Hemodynamics Modeling Laboratory: [HeMoLab](https://hemolab.lncc.br)
 
 Para clonar este repositório:
    ```bash
