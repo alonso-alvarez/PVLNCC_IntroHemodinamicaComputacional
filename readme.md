@@ -3,8 +3,13 @@
 Minicurso oferecido no Programa de Verão do Laboratório Nacional de Computação Científica - LNCC.
 
 O objetivo desse minicurso é fornecer um primeiro contato com as ferramentas, tanto teóricas quanto práticas, para o desenvolvimento e uso de modelos que descrevam o escoamento sanguíneo no sistema cardiovascular humano.
-- Pablo Blanco. Pesquisador Títular do LNCC. pjblanco@lncc.br
-- Alonso Alvarez. Pesquisador Adjunto do LNCc. lalvarez@lncc.br
+- Pablo Blanco. Pesquisador Títular do LNCC. pjblanco [at] lncc.br
+- Alonso Alvarez. Pesquisador Adjunto do LNCc. lalvarez [at] lncc.br
+
+Links de interesse:
+- Laboratório Nacional de Computação Científica: lncc.br
+- Programa de Verão do LNCC: verao.lncc.br
+- Hemodynamics Modeling Laboratory - HeMoLab: hemolab.lncc.br
 
 Para clonar este repositório:
    ```bash
@@ -25,10 +30,8 @@ Para clonar este repositório:
 ## Sobre o TEPEM4Ed
 TEPEM4Ed (TEPEM for Education) é um software de simulação do escoamento sanguíneo 3d, desenvolvido para a primeira edição do minicurso "Introdução à Hemodinâmica Computacional" (2023) que encapsula dentro de um container Docker o método numérico denominado TEPEM (Transversally Enriched Pipe Element Method). O TEPEM foi desenvolvido durante a tese de doutorado do Alonso Alvarez, sob orientação do Pablo Blanco, no LNCC.
 
-Referências
+## Referências
+- Taroco, EO; Blanco, PJ; Feijóo, RA. Introduction to the Variational Formulation in Mechanics: Fundamentals and Applications. 2020 – Wiley.
 - Mansilla Alvarez, LA. An Effective Numerical Technique for Pipe-Like Domains and its Application in Computational Hemodynamics. Tese de Doutorado 2018, Orientador: Blanco, PJ – Laboratório Nacional de Computação Científica.
+- Bulant, CA. Computational Models for the Geometric and Functional Assessment of Coronary Circulation. Tese de Doutorado 2017, Orientador: Blanco, PJ – Laboratório Nacional de Computação Científica, Advisor: Pablo Javier Blanco
 - Mansilla Álvarez, LA; Blanco, PJ; Bulant, CA; Dari, EA; Veneziani, A; Feijóo, RA. Transversally Enriched Pipe Element Method (TEPEM). An effective numerical approach for blood flow modeling. International Journal for Numerical Methods in Biomedical Engineering, v. 33, p. e2808, 2017.
-
-Como usar o TEPEM4Ed
-- Instalar Docker: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04
-- 
