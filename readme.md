@@ -6,6 +6,11 @@ O objetivo desse minicurso é fornecer um primeiro contato com as ferramentas, t
 - Pablo Blanco. Pesquisador Títular do LNCC. pjblanco@lncc.br
 - Alonso Alvarez. Pesquisador Adjunto do LNCc. lalvarez@lncc.br
 
+Para clonar este repositório:
+   ```bash
+   git clone https://github.com/alonso-alvarez/PVLNCC_IntroHemodinamicaComputacional
+  ```
+
 ## Ementa do minicurso
 - **Aula 01:** Aspectos fisiológicos do escoamento sanguíneo. Princípios da mecânica dos fluídos. Equações constitutivas.
 - **Aula 02:** Formulações variacionais, condições de contorno e domínios deformáveis.
