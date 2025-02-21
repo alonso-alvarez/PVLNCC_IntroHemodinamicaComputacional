@@ -21,7 +21,7 @@ Para clonar este repositório:
 - **Visualização.** Para a visualização dos resultados, utilizaremos o conhecido software [Paraview](https://www.paraview.org/download/)
 
 ## TEPEM4Ed como docker container
-![screenshot](imageFolder/docker_process.png)
+<img src="imageFolder/docker_process.png" width="700"/>
 
 Comandos uteis no Docker:
 - **Listar imagens.** docker image list
