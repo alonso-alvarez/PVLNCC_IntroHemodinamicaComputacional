@@ -100,3 +100,6 @@ Resultados com 1 mmHg
 - Time with mpi = 1: 1188 sec
 - Time with mpi = 2: 1401 sec
 - Time with mpi = 4; 1385 sec
+
+<img src="imageFolder/ex4_IVUS.png" width="1000"/>
+
