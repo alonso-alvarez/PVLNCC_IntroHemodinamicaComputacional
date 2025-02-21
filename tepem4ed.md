@@ -55,11 +55,12 @@ O TEPEM4Ed contem, entre outras, as seguintes características:
 - IniFile.txt: Condição incial para campos velocidade e pressão. Condição inicial nula
 - Param.txt: Caracterísiticas materiais do problema.
 
-## Exemplo 1: Escoamento de Poiseuille**
+## Exemplo 1: Escoamento de Poiseuille
 O escoamento de Poiseuille é um flixo induzido por um gradiente de pressão em um duto cilíndrico circular reto.
 Duas opções de queda de pressão são fornecidas: 1 mmHg e 10 mmHg
 O problema é estacionário porém um esquema iterativo é empregado para tratar o termo não-linear das equações.
    ```bash
+   cd examples/ex1_PoiseuilleFlow/
    cp ../../tepem .
    mpirun -np 1 --allow-run-as-root ./tepem > logout.log
   ```
@@ -69,7 +70,31 @@ Copiar os resultados para o domínio local
    docker cp <containerID>:<docker_path> <local_path>
   ```
 
+Resultados com 1 mmHg
+- DoFs: 26K
+- Time with mpi = 1: 43 sec
+
+<img src="imageFolder/ex1_poiseuille.png" width="1000"/>
 
 
+## Exemplo 2: Bended pipe
 
+- DoFs: 53K
+- Time with mpi = 1 - Low Flow: 205 sec
+- Time with mpi = 1 - Mid Flow: 264 sec
+- Time with mpi = 1 - High Flow: 240 sec
 
+<img src="imageFolder/ex2_BendedPipe.png" width="1000"/>
+
+## Exemplo 3: Stenosed pipe
+
+- DoFs: 46K
+- Time with mpi = 2: 73 sec
+- Time with mpi = 4: 67 sec
+
+<img src="imageFolder/ex3_StenosedPipe.png" width="1000"/>
+
+## Exemplo 4: Coronary artery segment
+
+- DoFs: 240K
+- Time with mpi = 1:  
