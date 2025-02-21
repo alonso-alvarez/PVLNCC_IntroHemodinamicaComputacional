@@ -76,8 +76,13 @@ Resultados com 1 mmHg
 
 <img src="imageFolder/ex1_poiseuille.png" width="1000"/>
 
-
 ## Exemplo 2: Bended pipe
+
+Estudamos o escoamento dentro de um dominio curvado, rígido e com condições de contorno impondo um perfil parabólico na entrada (interface esquerda) e pressão nula na saida.
+
+Três são os casos disponíveis, para diferente número de Reynolds: 250 (low), 500 (mid), 750 (high).
+
+As variações transversais do campo de pressão são claramente idenfiticadas nesse exemplo.
 
 - DoFs: 53K
 - Time with mpi = 1 - Low Flow: 205 sec
@@ -88,6 +93,11 @@ Resultados com 1 mmHg
 
 ## Exemplo 3: Stenosed pipe
 
+Consideramos uma descrição sintética de uma estenose, redução do lúmen arterial, equivalente a 50% do diâmetro original.
+A redução abrupta da área pela qual escoa o fluido resulta em altas velocidades e zonas de recirculação após a estenose.
+
+As condições de contorno nesse caso são um perfil parabólico na entrada (seção esquerda) e pressão nula na saída.
+
 - DoFs: 46K
 - Time with mpi = 2: 73 sec
 - Time with mpi = 4: 67 sec
@@ -96,10 +106,25 @@ Resultados com 1 mmHg
 
 ## Exemplo 4: Coronary artery segment
 
+Usando a segmentação de uma artéria via ultrasom intra-vascular, a geometria vascular é reconstruida sem a curvatura natural
+
+Mostramos três casos correspondentes a diferente número de Reynolds: 250 (esquerda), 500 (centro) e 750 (direita)
+
+As condições de contorno são vazão na entrada, imposta via método de multiplicador de Lagrange, e pressão nula na saída.
+
 - DoFs: 240K
 - Time with mpi = 1: 1188 sec
-- Time with mpi = 2: 1401 sec
-- Time with mpi = 4; 1385 sec
 
 <img src="imageFolder/ex4_IVUS.png" width="1000"/>
 
+## Exemplo 5: Coronary tree
+
+Uma árvore coronária, árvore direita, é considerada nesse caso.
+
+Como condições de contorno distribuimos a vazão total pelas saídas, cada uma associada a um multiplicador de Lagrange, e consideramos pressão nula na entrada.
+
+Os resultados de pressão e wall shear stress (WSS) são apresentados em duas vistas
+
+- DoFs: 298K
+
+<img src="imageFolder/ex5_CoronaryTree.png" width="1000"/>
