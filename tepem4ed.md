@@ -17,13 +17,59 @@ Para clonar este repositório:
   ```
 
 ## Requisitos
-- **Docker** Recomendamos o seguinte tutorial: [Instalar Docker](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04)
-- **Visualização.** Para a visualização dos resultados, utilizaremos o conhecido software [Paraview](https://www.paraview.org/download/)
+<img src="imageFolder/tepem4ed_requirements.png" width="800"/>
 
-## TEPEM4Ed como docker container
-<img src="imageFolder/docker_process.png" width="700"/>
+**Docker**: Docker é um aplicativo que simplifica o processo de gerenciamento de processos de aplicativos em contêineres. Os contêineres permitem que você execute seus aplicativos em processos isolados de recursos. Eles são semelhantes a máquinas virtuais, mas os contêineres são mais portáteis, mais amigáveis ​​aos recursos e mais dependentes do sistema operacional do host.
+O TEPEM4Ed contem, entre outras, as seguintes características:
+- O sistema operacional escolhido é Ubuntu 18.04
+- Para a comunicação paralela: OpenMPI
+- O toolkit para computação cientifica PETSc 3.6
+- O código TEPEM, para a solução de problemas em hemodinâmica, desenvolvido no grupo HeMoLab.
 
-Comandos uteis no Docker:
-- **Listar imagens.** docker image list
-- **Buscar imagens.** docker search hemolab
-- **Utilizar imagen.** docker run -it hemolab/tepem4ed
+- Instalação: Recomendamos o seguinte tutorial [Instalar Docker](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04)
+- Buscar e utilizar a imagem:
+   ```bash
+   docker search hemolab
+   docker run -it hemolab/tepem4ed
+  ```
+
+**Visualização.** Para a visualização dos resultados, utilizaremos o conhecido software [Paraview](https://www.paraview.org/download/)
+
+## Conteúdo do container
+
+**Executáveis**: Dois executáveis são disponibilizados dentro da imagem docker:
+- tepem: Para a solução do problema de Navier-Stokes utilizando o método TEPEM
+- postprocessing: Para a geração do arquivo para post-processamento, a ser visualizado dentro do Paraview.
+  
+**Exemplos**: Em nível de complexidade
+- Exemplo 1: Poiseuille flow
+- Exemplo 2: Escoamento dentro de uma região curvada
+- Exemplo 3: Segmento simulando uma estenose
+- Exemplo 4: Segmento de artéria coronária obtida por exame IVUS
+- Exemplo 5: Árvore coronariana direita
+- Exemplo 6: Árvore coronariana esquerda
+
+**Para cada exemplo**
+- Basparam.txt: Arquivo contendo a configuração do problema: Navier-Stokes, estacionário, critério de parada, etc.
+- Mesh.txt: Malha utilizada na discretização do domínio do problema, utilizando elementos tipo pipe.
+- IniFile.txt: Condição incial para campos velocidade e pressão. Condição inicial nula
+- Param.txt: Caracterísiticas materiais do problema.
+
+## Exemplo 1: Escoamento de Poiseuille**
+O escoamento de Poiseuille é um flixo induzido por um gradiente de pressão em um duto cilíndrico circular reto.
+Duas opções de queda de pressão são fornecidas: 1 mmHg e 10 mmHg
+O problema é estacionário porém um esquema iterativo é empregado para tratar o termo não-linear das equações.
+   ```bash
+   cp ../../tepem .
+   mpirun -np 1 --allow-run-as-root ./tepem > logout.log
+  ```
+
+Copiar os resultados para o domínio local
+   ```bash
+   docker cp <containerID>:<docker_path> <local_path>
+  ```
+
+
+
+
+
