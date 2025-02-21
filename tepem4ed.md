@@ -97,4 +97,6 @@ Resultados com 1 mmHg
 ## Exemplo 4: Coronary artery segment
 
 - DoFs: 240K
-- Time with mpi = 1:  1188 sec
+- Time with mpi = 1: 1188 sec
+- Time with mpi = 2: 1401 sec
+- Time with mpi = 4; 1385 sec
